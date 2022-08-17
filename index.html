@@ -11,60 +11,63 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="ff-body">
+<body class="ff-body bg-accent-400">
     <!-- header -->
     <div class="container header">
-        <h1 class="fs-h1 fw-bold">My Library</h1>
+        <h1 class="fs-h1 fw-bold text-neutral-450">My Library</h1>
     </div>
-    <!-- book form -->
-    <div class="container book-form">
-        <h2 class="fs-h2 fw-semibold">Add a book</h2>
-        <form id="book-form">
-            <div class="form-group">
-                <label for="title">title:</label>
-                <input type="text" id="title">
-            </div>
-            <div class="form-group">
-                <label for="author">author:</label>
-                <input type="text" id="author">
-            </div>
-            <div class="form-group">
-                <label for="pages">pages:</label>
-                <input type="number" id="pages">
-            </div>
-            <div class="form-group">
-                <label for="isbn">isbn:</label>
-                <input type="number" id="isbn">
-            </div>
-            <div class="form-group">
-                <label for="read">read status:</label>
-                    <select id="read">
-                        <option value="read">read</option>
-                        <option value="not read">not read</option>
-                    </select>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="add book"></input>
-            </div>
-        </form>
-    </div>
-    <!-- book list -->
-    <div class="container book-list">
-        <table>
-            <caption class="fs-h2 fw-semibold">Books</caption>
-            <thead class="fs-h3">
-                <tr>
-                    <th>Title</th>
-                    <th>Author</th>
-                    <th>Pages</th>
-                    <th>ISBN</th>
-                    <th>Read Status</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody id="book-list">
-            </tbody>
-        </table>
+    <!-- book form and book list container -->
+    <div class="container side-by-side bg-neutral-450">
+        <!-- book form -->
+        <div class="book-form">
+            <h2 class="fs-h2 fw-semibold text-neutral-400">Add a book</h2>
+            <form class="text-neutral-400" id="book-form">
+                <div class="form-group">
+                    <label class="fs-h3 fw-medium" for="title">Title</label>
+                    <input class="fs-body" type="text" id="title">
+                </div>
+                <div class="form-group">
+                    <label class="fs-h3 fw-medium" for="author">Author</label>
+                    <input class="fs-body" type="text" id="author">
+                </div>
+                <div class="form-group">
+                    <label class="fs-h3 fw-medium" for="pages">Pages</label>
+                    <input class="fs-body" type="number" id="pages">
+                </div>
+                <div class="form-group">
+                    <label class="fs-h3 fw-medium" for="isbn">ISBN</label>
+                    <input class="fs-body" type="number" id="isbn">
+                </div>
+                <div class="form-group">
+                    <label class="fs-h3 fw-medium" for="read">Read status</label>
+                        <select class="fs-body" id="read">
+                            <option value="read">read</option>
+                            <option value="not read">not read</option>
+                        </select>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="add book"></input>
+                </div>
+            </form>
+        </div>
+        <!-- book list -->
+        <div class="book-list">
+            <table class="text-neutral-400">
+                <caption class="fs-h2 fw-semibold">Books</caption>
+                <thead class="fs-h3 fw-medium">
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Pages</th>
+                        <th>ISBN</th>
+                        <th>Read Status</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="book-list">
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <script src="script.js"></script>

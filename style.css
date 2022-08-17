@@ -1,6 +1,7 @@
 :root {
     /* color */
-    --clr-neutral-400: hsl(0, 0%, 0%);
+    --clr-neutral-400: hsl(0, 0%, 20%);
+    --clr-neutral-450: hsl(0, 0%, 95%);
     --clr-neutral-500: hsl(0, 0%, 100%);
 
     --clr-accent-400: #577590;
@@ -38,29 +39,69 @@
     /* border: 1px solid red !important; */
 }
 
+/* body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+} */
+
+/* horizontal container */
 .container {
     width: clamp(320px, 90vw, 70rem);
-    margin: auto;
+    margin: 0 auto;
 }
 
 /* header container */
 
-/* book form container */
-.container.book-form {
+/* book form and book list container */
+.side-by-side {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
+/* book form container */
 .form-group {
     display: flex;
     flex-direction: column;
 }
 
-/* book list container */
-.container.book-list {
-    display: grid;
+
+input {
+    /* reset appearance */
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+
+    border: 1px solid var(--clr-neutral-400);
+    border-radius: 1px;
+    padding: 0.4rem 0.6rem;
 }
+
+/* book list container */
+.book-list {
+    flex-grow: 1;
+    flex-shrink: 3;
+}
+
+table {
+    width: 100%;
+}
+
+th,
+td {
+    padding: 0 0.5rem;
+    text-align: left;
+}
+
+th:nth-child(6) {
+    width: 0;
+}
+
 
 /* utility classes */
 
@@ -68,27 +109,33 @@
 .text-neutral-400 {
     color: var(--clr-neutral-400);
 }
+.text-neutral-450 {
+    color: var(--clr-neutral-450);
+}
 .text-neutral-500 {
     color: var(--clr-neutral-500);
 }
 .text-accent-400 {
     color: var(--clr-accent-400);
 }
-.text-neutral-500 {
+.text-accent-500 {
     color: var(--clr-accent-500);
 }
 
 /* background-color */
-.background-neutral-400 {
+.bg-neutral-400 {
     background-color: var(--clr-neutral-400);
 }
-.background-neutral-500 {
+.bg-neutral-450 {
+    background-color: var(--clr-neutral-450);
+}
+.bg-neutral-500 {
     background-color: var(--clr-neutral-500);
 }
-.background-accent-400 {
+.bg-accent-400 {
     background-color: var(--clr-accent-400);
 }
-.background-neutral-500 {
+.bg-accent-500 {
     background-color: var(--clr-accent-500);
 }
 
