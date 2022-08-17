@@ -29,7 +29,7 @@ class UI {
             <td>${book.pages}</td>
             <td>${book.isbn}</td>
             <td><a href="#" class="read">${book.read}</a></td>
-            <td><a href="#" class="delete">X</a></td>
+            <td><a href="#" class="delete">✖</a></td>
         `;
 
         list.appendChild(row);
@@ -58,14 +58,14 @@ class UI {
         document.querySelector('#author').value = '';
         document.querySelector('#pages').value = '';
         document.querySelector('#isbn').value = '';
-        document.querySelector('#read').value = 'read';
+        document.querySelector('#read').value = 'Read';
     }
 
     static changeReadStatus(el) {
-        if(el.innerHTML === 'read') {
-            el.innerHTML = 'not read';
-        } else if(el.innerHTML === 'not read'){
-            el.innerHTML = 'read';
+        if(el.innerHTML === 'Read') {
+            el.innerHTML = 'Not read';
+        } else if(el.innerHTML === 'Not read'){
+            el.innerHTML = 'Read';
         }
     }
 }
@@ -106,10 +106,10 @@ class Store {
 
         books.forEach((book) => {
             if(book.isbn === isbn) {
-                if(book.read === "read") {
-                    book.read = "not read";
-                } else if(book.read === "not read") {
-                    book.read = "read";
+                if(book.read === "Read") {
+                    book.read = "Not read";
+                } else if(book.read === "Not read") {
+                    book.read = "Read";
                 }
             }
         });

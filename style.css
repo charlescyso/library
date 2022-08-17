@@ -49,7 +49,7 @@
 /* horizontal container */
 .container {
     width: clamp(320px, 90vw, 70rem);
-    margin: 0 auto;
+    margin: 2rem auto;
 }
 
 /* header container */
@@ -59,12 +59,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 3rem 0.5rem;
 
     padding: 1rem;
     border-radius: 1rem;
 }
 
 /* book form container */
+
 .form-group {
     display: flex;
     flex-direction: column;
@@ -81,6 +83,13 @@ select {
     border: 1px solid hsl(0, 0%, 80%);
     border-radius: 1px;
     padding: 0.4rem 0.6rem;
+}
+
+input:focus,
+select:focus {
+    /* outline: 1px solid var(--clr-accent-400); */
+    outline: none;
+    border: 1px solid var(--clr-accent-400); 
 }
 
 input[type="submit"] {
@@ -107,6 +116,25 @@ label {
     margin-bottom: 0.1rem;
 }
 
+/* success and danger classes */
+.alert {
+}
+
+.alert-success {
+    color: green;
+}
+
+.alert-success::after {
+    content: ' ✔'
+}
+.alert-danger {
+    color: red;
+}
+
+.alert-danger::after {
+    content: ' ✖'
+}
+
 /* book list container */
 .book-list {
     flex-grow: 1;
@@ -119,12 +147,24 @@ table {
 
 th,
 td {
-    padding: 0 0.5rem;
+    padding: 0.5rem 0.5rem;
     text-align: left;
 }
 
 th:nth-child(6) {
     width: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.read {
+    color: var(--clr-accent-400)
+}
+
+a.delete {
+    color: red;
 }
 
 
