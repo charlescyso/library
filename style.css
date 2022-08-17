@@ -1,0 +1,129 @@
+:root {
+    /* color */
+    --clr-neutral-400: hsl(0, 0%, 0%);
+    --clr-neutral-500: hsl(0, 0%, 100%);
+
+    --clr-accent-400: #577590;
+    --clr-accent-500: #f3ca40;
+
+    /* font-family */
+    --ff-primary: 'Open Sans', sans-serif;
+
+    --ff-body: var(--ff-primary);
+
+    /* font-weight */
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    /* font-size */
+    --fs-300: 0.8rem;
+    --fs-400: 1rem;
+    --fs-500: 1.2rem;
+    --fs-600: 1.4rem;
+    --fs-700: 1.6rem;
+
+    --fs-body: var(--fs-400);
+    --fs-primary-header: var(--fs-700);
+    --fs-secondary-header: var(--fs-600);
+    --fs-tertiary-header: var(--fs-500);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    /* border: 1px solid red !important; */
+}
+
+.container {
+    width: clamp(320px, 90vw, 70rem);
+    margin: auto;
+}
+
+/* header container */
+
+/* book form container */
+.container.book-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* book list container */
+.container.book-list {
+    display: grid;
+}
+
+/* utility classes */
+
+/* text color */
+.text-neutral-400 {
+    color: var(--clr-neutral-400);
+}
+.text-neutral-500 {
+    color: var(--clr-neutral-500);
+}
+.text-accent-400 {
+    color: var(--clr-accent-400);
+}
+.text-neutral-500 {
+    color: var(--clr-accent-500);
+}
+
+/* background-color */
+.background-neutral-400 {
+    background-color: var(--clr-neutral-400);
+}
+.background-neutral-500 {
+    background-color: var(--clr-neutral-500);
+}
+.background-accent-400 {
+    background-color: var(--clr-accent-400);
+}
+.background-neutral-500 {
+    background-color: var(--clr-accent-500);
+}
+
+/* font-family */
+.ff-body {
+    font-family: var(--ff-body);
+}
+
+/* font-weight */
+.fw-light {
+    font-weight: var(--fw-light);
+}
+.fw-regular {
+    font-weight: var(--fw-regular);
+}
+.fw-medium {
+    font-weight: var(--fw-medium);
+}
+.fw-semibold {
+    font-weight: var(--fw-semibold);
+}
+.fw-bold {
+    font-weight: var(--fw-bold);
+}
+
+/* font-size */
+.fs-body {
+    font-size: var(--fs-body);
+}
+.fs-h1 {
+    font-size: var(--fs-primary-header);
+}
+.fs-h2 {
+    font-size: var(--fs-secondary-header);
+}
+.fs-h3 {
+    font-size: var(--fs-tertiary-header);
+}
