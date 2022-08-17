@@ -71,15 +71,40 @@
 }
 
 
-input {
+input,
+select {
     /* reset appearance */
     -webkit-appearance: none;
     -moz-appearance:    none;
     appearance:         none;
 
-    border: 1px solid var(--clr-neutral-400);
+    border: 1px solid hsl(0, 0%, 80%);
     border-radius: 1px;
     padding: 0.4rem 0.6rem;
+}
+
+input[type="submit"] {
+    align-self: center;
+
+    border: none;
+    border-radius: 10px;
+    width: 50%;
+    margin-top: 1rem;
+
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    filter: brightness(105%);
+}
+
+input[type="submit"]:active {
+    filter: brightness(95%);
+}
+
+label {
+    margin-top: 1rem;
+    margin-bottom: 0.1rem;
 }
 
 /* book list container */
