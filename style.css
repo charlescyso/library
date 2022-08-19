@@ -5,6 +5,7 @@
     --clr-neutral-500: hsl(0, 0%, 100%);
 
     --clr-accent-400: #577590;
+    --clr-accent-450: #905759;
     --clr-accent-500: #f3ca40;
 
     /* font-family */
@@ -63,6 +64,7 @@
 
     padding: 1rem;
     border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 /* book form container */
@@ -164,7 +166,7 @@ a.read {
 }
 
 a.delete {
-    color: red;
+    color: var(--clr-accent-450);
 }
 
 
@@ -183,6 +185,9 @@ a.delete {
 .text-accent-400 {
     color: var(--clr-accent-400);
 }
+.text-accent-450 {
+    color: var(--clr-accent-450);
+}
 .text-accent-500 {
     color: var(--clr-accent-500);
 }
@@ -199,6 +204,9 @@ a.delete {
 }
 .bg-accent-400 {
     background-color: var(--clr-accent-400);
+}
+.bg-accent-450 {
+    background-color: var(--clr-accent-450);
 }
 .bg-accent-500 {
     background-color: var(--clr-accent-500);
