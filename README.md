@@ -1,2 +1,4 @@
 # library
 My first library!
+
+In my first library, I applied what I learnt about forms and tables and object prototypes to build my first library. The HTML and CSS portion was not a problem as I built this webapp, but I struggled quite a bit with the Javascript as I struggled to understand how to apply object prototypes to this project. I understood how prototypes worked, but struggled to get HTML and Javascript to work together, such as getting form information to build objects. Because of this, I went onto forums and YouTube trying to find answers and came across a tutorial that guided how to build the webapp, but instead of building it with prototypes, he built it with class constructors. I have a better understanding of class constructors than object prototypes after this project, so I hope to come across more resources and projects that eases me into using it in real world applications.
